@@ -1,0 +1,63 @@
+:root{
+  --bg:#05060a;
+  --card:#0b0d11;
+  --neon:#00f0ff;
+  --violet:#b000ff;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(180deg,#03040a 0%, #07080c 100%);
+  color:#eafcff;
+  min-height:100vh;
+}
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  background:linear-gradient(90deg, rgba(0,0,0,0.2), transparent);
+}
+.brand{font-size:18px;letter-spacing:1px}
+.accent{color:var(--neon);margin-left:6px}
+.nav .chip, .nav .link{margin-left:10px;color:#94f7ff; text-decoration:none}
+.container{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  padding:18px;
+  max-width:820px;margin:30px auto;
+}
+.panel{
+  background:var(--card);
+  border-radius:12px;padding:16px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.6);
+  border:1px solid rgba(0,255,255,0.03);
+}
+.title{margin:0 0 8px 0}
+textarea{
+  width:100%; min-height:90px; resize:vertical;
+  background:var(--glass); border:none; color:#dffeff; padding:12px; border-radius:8px;
+}
+.row{display:flex;gap:12px;align-items:center;margin-top:10px}
+.btn{
+  padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:700;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.neon{background:linear-gradient(90deg,var(--neon),#00a3ff); color:#021216}
+.violet{background:linear-gradient(90deg,var(--violet),#7a00ff); color:#fff}
+.select{padding:8px;border-radius:8px;border:none;background:#071018;color:#dffeff}
+.result{margin-top:14px;display:flex;justify-content:center}
+.result img{max-width:100%;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.textResult{
+  background:#02050a;padding:12px;border-radius:8px;color:#cfeff0;white-space:pre-wrap;
+  min-height:80px;
+}
+.footer{margin-top:20px;text-align:center;color:#7fd9e0;opacity:0.9;padding:18px}
+.small{font-size:12px;opacity:0.6;margin-top:6px}
+@media(min-width:820px){
+  .container{flex-direction:row}
+  .panel{flex:1}
+}

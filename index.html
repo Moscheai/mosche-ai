@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mosche AI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">MOSCHE <span class="accent">AI</span></div>
+    <nav class="nav">
+      <button id="demoToggle" class="chip">Demo</button>
+      <a class="link" href="#pro">Pro</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h1 class="title">Text → Bild</h1>
+      <textarea id="promptImage" placeholder="Beschreibe das Bild..."></textarea>
+      <div class="row">
+        <button id="generateImage" class="btn neon">Generiere Bild</button>
+        <select id="resolution" class="select">
+          <option value="512">512px</option>
+          <option value="768">768px</option>
+        </select>
+      </div>
+      <div id="imageResult" class="result"></div>
+    </section>
+
+    <section class="panel">
+      <h1 class="title">Text → Text</h1>
+      <textarea id="promptText" placeholder="Schreibe eine Beschreibung, einen Hook oder Text..."></textarea>
+      <div class="row">
+        <button id="generateText" class="btn violet">Generiere Text</button>
+        <select id="tone" class="select">
+          <option value="neutral">Neutral</option>
+          <option value="motivational">Motivierend</option>
+        </select>
+      </div>
+      <pre id="textResult" class="textResult"></pre>
+    </section>
+  </main>
+
+  <footer class="footer" id="pro">
+    <div>Free Demo • Upgrade auf Pro für volle Leistung</div>
+    <div class="small">© Mosche AI</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
