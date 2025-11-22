@@ -1,0 +1,24 @@
+document.getElementById('text2img-btn').addEventListener('click', () => {
+  const prompt = document.getElementById('text2img-prompt').value;
+  const size = document.getElementById('image-size').value;
+  if (!prompt) {
+    alert("Please enter a prompt!");
+    return;
+  }
+
+  // Placeholder: Replace with your AI call
+  const imgDiv = document.getElementById('image-result');
+  imgDiv.innerHTML = `<p>Image for: "${prompt}" at ${size}px (demo)</p>`;
+});
+
+document.getElementById('text2text-btn').addEventListener('click', () => {
+  const prompt = document.getElementById('text2text-prompt').value;
+  if (!prompt) {
+    alert("Please enter text!");
+    return;
+  }
+
+  // Placeholder: Replace with your AI call
+  const textDiv = document.getElementById('text-result');
+  textDiv.innerHTML = `<p>Generated text for: "${prompt}" (demo)</p>`;
+});

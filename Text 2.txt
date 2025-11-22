@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosche AI — Free Hyper-Detail Image Generator</title>
+  <meta name="description" content="Mosche AI — Free Hyper-Detail Image Generator. Generate images or text from your prompts.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mosche AI</h1>
+    <p>Free Hyper-Detail Image & Text Generator</p>
+  </header>
+
+  <main>
+    <section class="generator">
+      <h2>Text → Image</h2>
+      <input type="text" id="text2img-prompt" placeholder="Enter your prompt here">
+      <select id="image-size">
+        <option value="512">512 px</option>
+        <option value="768">768 px</option>
+      </select>
+      <button id="text2img-btn">Generate Image</button>
+      <div id="image-result"></div>
+    </section>
+
+    <section class="generator">
+      <h2>Text → Text</h2>
+      <input type="text" id="text2text-prompt" placeholder="Enter your text here">
+      <button id="text2text-btn">Generate Text</button>
+      <div id="text-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mosche AI — All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
